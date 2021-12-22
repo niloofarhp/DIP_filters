@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from skimage.io import imread, imshow
+from skimage.color import rgb2gray
+from skimage import img_as_uint
+from scipy.signal import convolve2d
+
+kernel_edgedetection = np.array([[-1, -1, -1],
+                                 [-1, 8.5, -1],
+                                 [-1, -1, -1]])
+imshow(kernel_edgedetection, cmap = 'gray');                                 
+                                 
